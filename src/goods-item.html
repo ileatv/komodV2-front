@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', { "title":"Набитый комод", "description":"", "keywords":"", "favicon":"", })
+<body>
+    @@include('html/_header.html')
+    <main>
+        <div class="container">
+            <div class="goods-item">
+                <div class="goods-item__group">
+                    <div class="goods-item__wrapper">
+                        <span class="goods-item__new-product">NEW</span>
+                        <div class="goods-item__img">
+                            <img src="@img/vanzel.jpg" alt="">
+                        </div>
+                        <div class="goods-item__form">
+                            <form action="">
+                                <h4 class="goods-item__header">
+                                    <span class="icon-bed"></span>
+                                    Наволочка «Вензель»
+                                </h4>
+                                <div class="goods-item__articul">
+                                    <label class="goods-item__name" for="Articul">Артикул: </label>
+                                    <input type="text" id="Articul" value="#105138599" readonly>
+                                </div>
+                                <div class="goods-item__creator">
+                                    <label class="goods-item__name" for="Creator">Производитель: </label>
+                                    <input type="text" id="Creator" value="Россия, г. Иваново" readonly>
+                                </div>   
+                                <div class="goods-item__colors">
+                                    <label class="goods-item__name">Цвета: </label>
+                                    <div class="color">
+                                        <label class="color__group">
+                                            <input  class="color__input" type="checkbox" value="blue">
+                                            <span class="color__checkbox" style="background-color: aqua"></span>
+                                        </label>
+                                        <label class="color__group">
+                                            <input class="color__input" type="checkbox" value="black">
+                                            <span class="color__checkbox" style="background-color: black"></span>
+                                        </label>
+                                        <label class="color__group">
+                                            <input class="color__input" type="checkbox" value="grey">
+                                            <span class="color__checkbox" style="background-color: #eee"></span>
+                                        </label>
+                                        <label class="color__group">
+                                            <input class="color__input" type="checkbox" value="yellow">
+                                            <span class="color__checkbox" style="background-color: yellow"></span>
+                                        </label>                                       
+                                    </div>                                    
+                                </div>
+                                <div class="goods-item__sizes">
+                                    <label class="goods-item__name">Размеры: </label>
+                                    <div class="size">
+                                        <label class="size__group">
+                                            <input class="size__input" type="checkbox" value="">
+                                            <span class="size__checkbox">40x40</span>
+                                        </label>
+                                        <label class="size__group">
+                                            <input class="size__input" type="checkbox" value="">
+                                            <span class="size__checkbox">40x60</span>
+                                        </label>
+                                        <label class="size__group">
+                                            <input class="size__input" type="checkbox" value="">
+                                            <span class="size__checkbox">50x50</span>
+                                        </label>
+                                        <label class="size__group">
+                                            <input class="size__input" type="checkbox" value="">
+                                            <span class="size__checkbox">50x70</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- <div class="goods-item__quantity">
+                                    <label class="goods-item__name" for="Quantity">Кол-во: </label>
+                                    <div class="numbers">
+                                        <button class="number__minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                                        <input type="number" id="Quantity" value="1" min="1" max="100" step="1" required>
+                                        <button class="number__plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                                    </div>
+                                </div> -->
+                                <div class="total-group">
+                                    <div class="total-group__content">
+                                        <div class="numbers">
+                                            <button class="number__minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                                            <input type="number" id="Quantity" value="1" min="1" max="100" step="1" required>
+                                            <button class="number__plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                                        </div>
+                                        <span class="total-group__default-price">Цена за 1 шт: 1000 ₽</span>
+                                        <!-- <button class="btn btn_total">Добавить в корзину</button> -->
+                                    </div>
+                                    <div class="total-group__content">
+                                        <span class="total-group__final-price">Итого: 1000 ₽</span>
+                                        <button class="btn btn_total">Добавить в корзину</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="goods-item__wrapper">
+                        <div class="description">
+                            <h4 class="description__title">О товаре</h4>
+                            <div class="description__content">
+                                <!-- <h4>О товаре</h4> -->
+                                <p>Материал: <span>Бязь</span></p>
+                                <p>Состав: <span>100% хлопок</span></p>
+                                <p>Описание: 
+                                    <span>
+                                        Наволочка из 100% хлопка отличается гипоаллергенностью и&nbsp;износостойкостью. Подойдёт как для&nbsp;детей, так и для взрослых. Наволочка приятна к&nbsp;телу, очень хорошо пропускает воздух, не электризуется. За&nbsp;постельным бельём из хлопка очень легко ухаживать. Оно не теряет яркости и не деформируется при стирке при&nbsp;температуре до 40°С. Ткань прочная, плотная, и&nbsp;не&nbsp;образует катышков. 
+                                        <!-- Так же вы можете приобрести у нас пододеяльники, наволочки, простыни натяжные и на резинке из этой коллекции, чтобы собрать свой индивидуальный комплект постельного белья. -->                                    
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>    
+            </div>
+        </div>
+    </main>
+    @@include('html/_footer.html')
+    @@include('html/_scripts.html')
+    <script src="js/app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', { "title":"Каталог - Набитый комод", "description":"", "keywords":"", "favicon":"", })
+
+<body>
+    @@include('html/_header.html') @@include('html/_breadcrumbs.html', { "link":"Каталог"})
+    <main class="content">
+        <section class="section catalog">
+            <div class="container">
+                <h1 class="section__title catalog__title">Каталог</h1>
+                    <div class="catalog__group">
+                        <aside class="aside">
+                            <form class="filter form">
+                                <div class="filter__group">
+                                    <h4 class="filter__title">Цена</h4>
+                                    <div class="filter__data filter__price">
+                                        <div class="form__group">
+                                            <label for="minPrice" class="form__label">От</label>
+                                            <input type="text" class="filter__min-price form__input" id="minPrice" name="minPrice" value="50" />
+                                        </div>
+                                        <span class="filter__price-div"></span>
+                                        <div class="form__group">
+                                            <label for="maxPrice" class="form__label">До</label>
+                                            <input type="text" class="filter__max-price form__input" id="maxPrice" name="maxPrice" value="13000" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__group">
+                                    <h4 class="filter__title">Цвет</h4>
+                                    <div class="filter__data">
+                                        <div class="filter__colors">
+                                            <div class="filter__color">
+                                                <input type="checkbox" id="color1" name="colors" data-color="" />
+                                                <label for="color1" style="background-color: aqua"></label>
+                                            </div>
+                                            <div class="filter__color">
+                                                <input type="checkbox" id="color2" name="colors" data-color="" />
+                                                <label for="color2" style="background-color: black"></label>
+                                            </div>
+                                            <div class="filter__color">
+                                                <input type="checkbox" id="color3" name="colors" data-color="" />
+                                                <label for="color3" style="background-color: #eee"></label>
+                                            </div>
+                                            <div class="filter__color">
+                                                <input type="checkbox" id="color4" name="colors" data-color="" />
+                                                <label for="color4" style="background-color: yellow"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__group">
+                                    <h4 class="filter__title">Производитель</h4>
+                                    <div class="filter__data">
+                                        <div class="filter__brands">
+                                            <div class="filter__checkbox">
+                                                <input type="checkbox" name="propertyValueId" value="1" id="1-ALIZE" class="brandList" />
+                                                <label for="1-ALIZE">ALIZE</label>
+                                            </div>
+                                            <div class="filter__checkbox">
+                                                <input type="checkbox" name="propertyValueId" value="2" id="2-AYAZ" class="brandList" />
+                                                <label for="2-AYAZ">AYAZ</label>
+                                            </div>
+                                            <div class="filter__checkbox">
+                                                <input type="checkbox" name="propertyValueId" value="3" id="3-GAZZAL" class="brandList" />
+                                                <label for="3-GAZZAL">GAZZAL</label>
+                                            </div>
+                                            <div class="filter__checkbox">
+                                                <input type="checkbox" name="propertyValueId" value="4" id="4-KARTOPU" class="brandList" />
+                                                <label for="4-KARTOPU">KARTOPU</label>
+                                            </div>
+                                            <div class="filter__checkbox">
+                                                <input type="checkbox" name="propertyValueId" value="5" id="5-Lanoso" class="brandList" />
+                                                <label for="5-Lanoso">Lanoso</label>
+                                            </div>
+                                            <div class="filter__checkbox">
+                                                <input type="checkbox" name="propertyValueId" value="6" id="6-NAKO" class="brandList" />
+                                                <label for="6-NAKO">NAKO</label>
+                                            </div>
+                                            <div class="filter__checkbox">
+                                                <input type="checkbox" name="propertyValueId" value="7" id="7-YarnArt" class="brandList" />
+                                                <label for="7-YarnArt">YarnArt</label>
+                                            </div>
+                                            <div class="filter__checkbox">
+                                                <input type="checkbox" name="propertyValueId" value="8" id="8-Fibranatura" class="brandList" />
+                                                <label for="8-Fibranatura">Fibranatura</label>
+                                            </div>
+                                            <div class="filter__checkbox">
+                                                <input type="checkbox" name="propertyValueId" value="9" id="9-Biskvit" class="brandList" />
+                                                <label for="9-Biskvit">Biskvit</label>
+                                            </div>
+                                            <div class="filter__checkbox">
+                                                <input type="checkbox" name="propertyValueId" value="10" id="10-Caramel" class="brandList" />
+                                                <label for="10-Caramel">Caramel</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__group">
+                                    <h4 class="filter__title">Наволочка</h4>
+                                    <div class="filter__data">
+                                        <div class="filter__props">
+                                            <div class="filter__checkbox">
+                                                <input type="checkbox" name="propertyValueId" value="1" id="100-ALIZE" class="brandList" />
+                                                <label for="100-ALIZE">ALIZE</label>
+                                            </div>
+                                            <div class="filter__checkbox">
+                                                <input type="checkbox" name="propertyValueId" value="2" id="200-AYAZ" class="brandList" />
+                                                <label for="200-AYAZ">AYAZ</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                                <button class="filter__button">Применить</button>
+                                <button class="filter__button">Сбросить</button>
+                            </form>
+                        </aside>
+                        <div class="product-list">
+                            <div class="product-list__header-group">
+                                <h4 class="product-list__header">Каталог</h4>
+                                <div class="product-list__sort sort">
+                                    <button type="button" class="sort__btn">Сортировать <span></span></button>
+                                    <ul class="sort__data">
+                                        <li class="sort__item"><button type="button" class="sort__value">по убыванию цены</button></li>
+                                        <li class="sort__item"><button type="button" class="sort__value">по возрастанию цены</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-list__cards cards">
+                                <div class="card">
+                                    <div class="card__header">
+                                        <div class="card__sale">
+                                            <span class="icon-percent"></span>
+                                            - 25%
+                                        </div>
+                                        <!-- <a href="#" class="card__wishlist">
+                                            <span class="icon-wishlist"></span>
+                                        </a> -->
+                                    </div>
+                                    <a href="#" class="card__img">
+                                        <img src="https://komod-tlt.ru/Files/%D0%9D%D0%B0%D0%B2%D0%BE%D0%BB%D0%BE%D1%87%D0%BA%D0%B0%20%D0%92%D0%B5%D0%BD%D0%B7%D0%B5%D0%BB%D1%8C/IMG-20190111-WA0008.jpg" alt="" width="210" height="210" />
+                                    </a>
+                                    <a href="../goods-item.html" class="card__title">
+                                        <h4>Вензель</h4>
+                                    </a>
+                                    <span class="card__category">Наволочки Бязь</span>
+                                    <div class="card__price card__price_sale">
+                                        <span class="card__min-price-sale">50</span>
+                                        <span class="card__price-div-sale"></span>
+                                        <span class="card__max-price-sale">13000 ₽</span>
+                                        <span class="card__min-price">50</span>
+                                        <span class="card__price-div"></span>
+                                        <span class="card__max-price">13000 ₽</span>
+                                    </div>                                    
+                                    <button class="card__atc btn">Перейти к товару</button>
+                                </div>
+                                <div class="card">
+                                    <!-- <div class="card__header">
+                                        <div class="card__sale"></div>
+                                        <a href="#" class="card__wishlist">
+                                            <span class="icon-wishlist"></span>
+                                        </a>
+                                    </div> -->
+                                    <a href="#" class="card__img">
+                                        <img src="https://komod-tlt.ru/Files/%D0%9D%D0%B0%D0%B2%D0%BE%D0%BB%D0%BE%D1%87%D0%BA%D0%B0%20%D0%92%D0%B5%D0%BD%D0%B7%D0%B5%D0%BB%D1%8C/IMG-20190111-WA0008.jpg" alt="" width="210" height="210" />
+                                    </a>
+                                    <a href="#" class="card__title">
+                                        <h4>Офелиа</h4>
+                                    </a>
+                                    <span class="card__category">Наволочки Бязь</span>
+                                    <div class="card__price">
+                                        <span class="card__min-price">60</span>
+                                        <span class="card__price-div"></span>
+                                        <span class="card__max-price">110 ₽</span>
+                                    </div>
+                                    <!-- <span class="card__category">Наволочки Бязь</span>
+                                    <a href="#" class="card__title">
+                                        <h4>Офелиа</h4>
+                                    </a> -->
+                                    <button class="card__atc btn">Перейти к товару</button>
+                                </div>
+                                <div class="card">
+                                    <!-- <div class="card__header">
+                                        <div class="card__sale"></div>
+                                        <a href="#" class="card__wishlist">
+                                            <span class="icon-wishlist"></span>
+                                        </a>
+                                    </div> -->
+                                    <a href="#" class="card__img">
+                                        <img src="https://komod-tlt.ru/Files/%D0%9D%D0%B0%D0%B2%D0%BE%D0%BB%D0%BE%D1%87%D0%BA%D0%B0%20%D0%92%D0%B5%D0%BD%D0%B7%D0%B5%D0%BB%D1%8C/IMG-20190111-WA0008.jpg" alt="" width="210" height="210" />
+                                    </a>
+                                    <a href="#" class="card__title">
+                                        <h4>Альфред</h4>
+                                    </a>
+                                    <span class="card__category">Наволочки Бязь</span>
+                                    <div class="card__price">
+                                        <span class="card__min-price">60</span>
+                                        <span class="card__price-div"></span>
+                                        <span class="card__max-price">100 ₽</span>
+                                    </div>
+                                    <button class="card__atc btn">Перейти к товару</button>
+                                </div>
+                                <div class="card">
+                                    <!-- <div class="card__header">
+                                        <div class="card__sale"></div>
+                                        <a href="#" class="card__wishlist">
+                                            <span class="icon-wishlist"></span>
+                                        </a>
+                                    </div> -->
+                                    <a href="#" class="card__img">
+                                        <img src="https://komod-tlt.ru/Files/%D0%9D%D0%B0%D0%B2%D0%BE%D0%BB%D0%BE%D1%87%D0%BA%D0%B0%20%D0%92%D0%B5%D0%BD%D0%B7%D0%B5%D0%BB%D1%8C/IMG-20190111-WA0008.jpg" alt="" width="210" height="210" />
+                                    </a>
+                                    <a href="#" class="card__title">
+                                        <h4>Азалия</h4>
+                                    </a>
+                                    <span class="card__category">Наволочки Бязь</span>
+                                    <div class="card__price">
+                                        <span class="card__min-price">70</span>
+                                        <span class="card__price-div"></span>
+                                        <span class="card__max-price">200 ₽</span>
+                                    </div>                                    
+                                    <button class="card__atc btn">Перейти к товару</button>
+                                </div>
+                                <div class="card">
+                                    <!-- <div class="card__header">
+                                        <div class="card__sale"></div>
+                                        <a href="#" class="card__wishlist">
+                                            <span class="icon-wishlist"></span>
+                                        </a>
+                                    </div> -->
+                                    <a href="#" class="card__img">
+                                        <img src="https://komod-tlt.ru/Files/%D0%9D%D0%B0%D0%B2%D0%BE%D0%BB%D0%BE%D1%87%D0%BA%D0%B0%20%D0%92%D0%B5%D0%BD%D0%B7%D0%B5%D0%BB%D1%8C/IMG-20190111-WA0008.jpg" alt="" width="210" height="210" />
+                                    </a>
+                                    <a href="#" class="card__title">
+                                        <h4>Сувенир</h4>
+                                    </a>
+                                    <span class="card__category">Наволочки Бязь</span>
+                                    <div class="card__price">
+                                        <span class="card__min-price">70</span>
+                                        <span class="card__price-div"></span>
+                                        <span class="card__max-price">200 ₽</span>
+                                    </div>                                    
+                                    <button class="card__atc btn">Перейти к товару</button>
+                                </div>
+                            </div>
+
+                            <ul class="product-list__pagination pagination">
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__prev">&lt;</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__page">1</a>
+                                </li>
+                                <li class="pagination__div">...</li>
+                                <li class="pagination__item"><a href="#" class="pagination__page">10</a></li>
+                                <li class="pagination__item"><a href="#" class="pagination__page pagination__page_active">11</a></li>
+                                <li class="pagination__item"><a href="#" class="pagination__page">12</a></li>
+                                <li class="pagination__div">...</li>
+                                <li class="pagination__item"><a href="#" class="pagination__page">99</a></li>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__prev">&gt;</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/_footer.html') @@include('html/_scripts.html')
+    <script src="js/pages/index.js"></script>
+</body>
+</html>
