@@ -22,10 +22,10 @@
                                     <label class="goods-item__name" for="Articul">Артикул: </label>
                                     <input type="text" id="Articul" value="#105138599" readonly>
                                 </div>
-                                <div class="goods-item__creator">
+                                <!-- <div class="goods-item__creator">
                                     <label class="goods-item__name" for="Creator">Производитель: </label>
                                     <input type="text" id="Creator" value="Россия, г. Иваново" readonly>
-                                </div>   
+                                </div>    -->
                                 <div class="goods-item__colors">
                                     <label class="goods-item__name">Цвета: </label>
                                     <div class="color">
@@ -83,7 +83,9 @@
                                             <input type="number" id="Quantity" value="1" min="1" max="100" step="1" required>
                                             <button class="number__plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
                                         </div>
-                                        <span class="total-group__default-price">Цена за 1 шт: 1000 ₽</span>
+                                        <!-- <button class="btn btn_total">Добавить в корзину</button> -->
+
+                                        <!-- <span class="total-group__default-price">Цена за 1 шт: 1000 ₽</span> -->
                                         <!-- <button class="btn btn_total">Добавить в корзину</button> -->
                                     </div>
                                     <div class="total-group__content">
@@ -96,9 +98,10 @@
                     </div>
                     <div class="goods-item__wrapper">
                         <div class="description">
-                            <h4 class="description__title">О товаре</h4>
+                            <!-- <h4 class="description__title">О товаре</h4> -->
                             <div class="description__content">
-                                <!-- <h4>О товаре</h4> -->
+                                <span>О товаре</span>
+                                <p>Производитель: <span>Россия, г. Иваново</span></p>
                                 <p>Материал: <span>Бязь</span></p>
                                 <p>Состав: <span>100% хлопок</span></p>
                                 <p>Описание: 

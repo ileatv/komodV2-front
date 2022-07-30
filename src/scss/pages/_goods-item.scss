@@ -185,7 +185,8 @@
         // height: 25px;
         cursor: pointer;
         margin-right: 10px;
-        background-color: transparent;
+        // background-color: transparent;
+        background-color: #FFFFFF;
         border-radius: 50%;
 
         &:last-child{
@@ -317,20 +318,21 @@
         line-height: 20px;
         width: 20px;
         transition: 0.3s all ease-in-out;
+        overflow: hidden;
 
         &:hover{
             background-color: $primary-color;
             color: $text-color-light;
 
-            &:first-child{
-                border-top-left-radius: 7px;
-                border-bottom-left-radius: 7px;
-            }
+            // &:first-child{
+            //     border-top-left-radius: 7px;
+            //     border-bottom-left-radius: 7px;
+            // }
 
-            &:last-child{
-                border-top-right-radius: 7px;
-                border-bottom-right-radius: 7px;
-            }
+            // &:last-child{
+            //     border-top-right-radius: 7px;
+            //     border-bottom-right-radius: 7px;
+            // }
         }
     }
 }
@@ -346,15 +348,15 @@
 	text-align: center;
 	border: none;
     
-    &::before{
-        position: absolute;
-        content: "";
-        top: 0;
-        right: 0;
-        width: 2px;
-        height: 100%;
-        background-color: $primary-color;
-    }
+    // &::before{
+    //     position: absolute;
+    //     content: "";
+    //     top: 0;
+    //     right: 0;
+    //     width: 2px;
+    //     height: 100%;
+    //     background-color: $primary-color;
+    // }
 }
 
 .number__plus {
@@ -368,15 +370,15 @@
 	text-align: center;
 	border: none;
 
-    &::before{
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 2px;
-        height: 100%;
-        background-color: $primary-color;
-    }
+    // &::before{
+    //     position: absolute;
+    //     content: "";
+    //     top: 0;
+    //     left: 0;
+    //     width: 2px;
+    //     height: 100%;
+    //     background-color: $primary-color;
+    // }
 }
 
 //Total group block
@@ -384,8 +386,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    // justify-content: flex-start;
-    // align-items: center;
+    justify-content: flex-start;
     margin-top: auto;
 
     &__content{
@@ -434,6 +435,7 @@
     &__content{
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
 
         // h4{
         //     text-transform: none;
@@ -442,6 +444,14 @@
         //     line-height: 28px;
         //     margin-bottom: 20px;
         // }
+
+        span{
+            text-transform: none;
+            font-size: 34px;
+            font-weight: 600;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
 
         p{
             position: relative;
@@ -474,6 +484,7 @@
                 font-size: 1rem;
                 font-weight: 400;                
                 line-height: 1.5;
+                margin-bottom: 0;
             }
         }
     }
