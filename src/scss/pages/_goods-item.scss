@@ -215,6 +215,7 @@
         left: 0;
     }
 
+    // &__input:checked + &__checkbox{
     &__input:checked + &__checkbox{
         position: absolute;
         content: "";
